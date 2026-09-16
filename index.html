@@ -12,10 +12,11 @@
         <nav>
             <h2> ملفي الشخصي</h2>
             <button class="menu-toggle" type="button" aria-label="فتح وإغلاق القائمه " aria-expanded="false">
-                <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
             </button>
-            <ul>
-                <li><a href="#about" class="nav-item active"><i class="fas fa-user"></i>عني</a></li>
+            <ul class="nav-links">
+                 <li><a href="#home" class="nav-item-link active"><i class="fas fa-home"></i>الرئيسيه</a></li>
+                <li><a href="#about" class="nav-item"><i class="fas fa-user"></i>عني</a></li>
                 <li><a href="#skills" class="nav-item"><i class="fas fa-code"></i> مهارتي</a></li>
                 <li><a href="#projects" class="nav-item"><i class="fas fa-briefcase"></i> مشاريعي</a></li>
                 <li><a href="#contact" class="nav-item"><i class="fas fa-envelope"></i> تواصل معي</a></li>
@@ -26,18 +27,18 @@
      <main>
         <section class="hero">
             <div>
-                <h1>مرحبا' انا أحمد</h1>
+                <h1><u>مرحبا أنا أحمد </u></h1>
                 <p>مطور مواقع ومهتم بتقنيات البرمجه</p>
                  <a class="button" href="#contact"><i class="fas fa-envelope"></i> تواصل معي</a>
             </div>
             <img src="./Porfile.jpeg" alt="صورتي الشخصيه">
         </section>
-        <section id="about">
-        <h2> عني</h2>
+        <section id="about" class="about-section">
+        <h2 class="section-title"><i class="fas fa-user"></i>عني</h2>
         <p>أنا مطور مواقع متهم بتصيمم وتطوير باستخدام HTML و CSS و JavaScript و Java. إنشاء واجهات ذكيه وسهله للاستخدام ومتجاوبه مع مختلف الأجهزه.</p>
         </section>
-         <section id="skills">
-        <h2>مهارتي</h2>
+         <section id="skills" class="skills-section">
+        <h2 class="section-title"><i class="fas fa-code"></i>مهارتي</h2>
        <div class="cards">
        <div><i class="fab fa-html5" style="color: #e34c26;"></i>HTML</div>
        <div><i class="fab fa-css3-alt" style="color: #264de4;"></i>CSS</div>
@@ -45,16 +46,17 @@
        <div><i class="fab fa-java" style="color: #007396;"></i>Java</div>
        </div>
      </section>
-        <section id="projects">
-        <h2> مشاريعي</h2>
+        <section id="projects" class="project-section">
+        <h2 class="section-title"><i class="fas fa-bars"></i> مشاريعي</h2>
          <div class="project">
          <h3>موقع الملف الشخصي</h3>
          <p>
          موقع يعرض معلوماتي ومهاراتي ومشاريعي.</p>
+         <a href="#" class="project-link">عرض المشورع</a>
          </div>
         </section>
-        <section id="contact">
-            <h2>تواصل معي</h2>
+        <section id="contact" class="contact-section">
+            <h2 class="section-title"><i class="fas fa-envelope"></i>تواصل معي</h2>
             <div class="contact-info-container">
                 <div class="info-box">
                     <i class="fas fa-envelope"></i>

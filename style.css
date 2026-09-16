@@ -26,7 +26,7 @@ body::before {
         top: 50px;
         left: 50%;
         transform: translateX(-50%);
-        transition: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+        background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
         z-index: -1;
         pointer-events: none;
         filter: blur(40px);
@@ -66,6 +66,13 @@ color: white;
          transition: transform 0.3s ease;
          position: relative;
          z-index: 1001;
+}
+
+.nav-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
 }
 
 .contact-info-container {
@@ -152,12 +159,12 @@ nav a::after {
     right: 0;
     width: 0;
     height: 3px;
-    background-color: #2563eb;
+    background-color: #38bdf8;
     transition: width 0.3s ease;
 }
 
 nav a.active {
-    color: #3b82f6;
+    color: #38bdf8;
     font-weight: bold;
 }
 
@@ -185,7 +192,7 @@ section {
 }
 
 .hero h1 {
-    font-size: 20px;
+    font-size: 40px;
     color: #ffffff;
     margin-bottom: 10px;
 }
@@ -229,13 +236,14 @@ section {
     transition: all 0.3s ease;
 }
 
-h2 {
+ section h2 {
     color: #ffffff;
     margin-bottom: 30px;
     font-size: 28px;
     border-bottom: 3px solid #2563eb;
     display: inline-block;
     padding-bottom: 8px;
+    margin-left: 6px;
 }
 
 .cards {
@@ -284,6 +292,25 @@ h2 {
     margin-bottom: 10px;
     color: #9cacbb;
 }
+
+.project-link {
+     display: inline-block;
+     margin-top: 15px;
+     padding: 8px 20px;
+     background-color: #38bdf8;
+     color: #0f172a;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+     transition: background-color 0.3s ease;
+
+}
+
+.project-link:hover {
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+
 #contact  p {
           font-size: 18px;
           margin-bottom: 15px;
@@ -337,43 +364,54 @@ footer {
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -100%;
-        background-color: #172554;
-        padding: 80px 20px 20px  20p;
+        right: -250px;
+        background-color: #0f172a;
+        padding: 60px 20px 20px  20p;
         gap: 20px;
         text-align: center;
         box-shadow: -10px 0 15px rgba(0, 0, 0, 0.15);
         transition: right 0.3s ease;
         width: 250px;
         height: 100vh;
-        z-index: 1000;
+        z-index: 10000;
     }
     .nav-links.show {
-              right: 0;
+              right: 0 !important;
     }
-    nav a::after {
-        right: 50%;
-        transform: translateX(50%);
+
+    .nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 12px 0;
+        display: block;
     }
-    .hero {
-        flex-direction: column-reverse;
+
+    .nav-links a:hover {
+        color: #38bdf8; !important;
+    }
+
+.hero {
         text-align: center;
         padding-top: 40px;
         gap: 20px;
-    }
+}
 
 .hero h1 {
     font-size: 40px;
 }
+
 .hero img {
     width: 180px;
     height: auto;
 }
-#contact p {
+
+/* #contact p {ss
     justify-content: center;
     flex-wrap: wrap;
 
-}
+} */
+
 @keyframes solideDown {
     from {
 opacity: 0;
@@ -383,5 +421,4 @@ transform: translateY(-10px);
         opacity: 1;
         transform: translateY(0);
     }
-}
 }
